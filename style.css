@@ -409,7 +409,7 @@ main {
     }
 }
 
-@media (min-width:1081px) and (max-width:2000px) {
+@media (min-width:1082px) and (max-width:2000px) {
 
     .about-me-heading {
         margin-top: 10vh;
@@ -442,7 +442,7 @@ main {
 
 }
 
-@media (min-width:600px) and (max-width:1080px) {
+@media screen and (max-width:1081px) {
     nav {
         display: flex;
         justify-content: center;
@@ -558,5 +558,107 @@ main {
         margin: 0px 35px;
         width: 75%;
         border-radius: 20%;
+    }
+}
+
+@media (max-width:481px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding: 10px;
+        width: 100vw;
+    }
+
+    ul li {
+        margin: 0px 14px;
+        list-style-type: none;
+    }
+
+    ul li a {
+        font-size: 1.2em;
+    }
+
+    .text-one {
+        font-size: 19px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 3px;
+    }
+
+    .text-two {
+        font-size: 24px;
+    }
+
+    .text-three {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        width: 76vw;
+    }
+
+    .download-cv {
+        font-size: 15px;
+        font-weight: bold;
+        background: #ff6a00bf;
+        color: #ffffff;
+        padding: 9px;
+        border-radius: 6px;
+    }
+
+    .homeImage {
+        width: 51vw;
+    }
+
+    .about-me-heading {
+        font-size: 2em;
+    }
+
+    .about-me-paragraph {
+        font-size: 0.8em;
+        width: 94vw;
+    }
+
+    #work-heading {
+        width: 58vw;
+        margin-top: 0vh;
+        font-size: 2em;
+    }
+
+    .work-image-container {
+        justify-items: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-right: 51px;
+        padding: 92px;
+        width: 123%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact-me {
+        width: 90vw;
+        border-radius: 2em;
+        box-shadow: 0px 5px 4px 2px grey;
+        margin-top: 30px;
+    }
+
+    #linkedin,
+    #github,
+    #phone,
+    #codepen {
+        width: 14vw;
+        border-radius: 13px;
+        margin: 17px;
+    }
+
+    #email-text {
+        font-size: 1.6em;
+    }
+
+    #email {
+        width: 10vw;
+        margin: 7px;
     }
 }
