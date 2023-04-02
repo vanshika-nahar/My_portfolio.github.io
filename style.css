@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Rowdies:wght@400;700&family=Tillana:wght@500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    /* font-family: 'Rowdies', cursive; */
+    /* font-family: 'Tillana', cursive; */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 30px;
+    font-family: 'Rowdies', cursive;
+}
+
+.logo-a {
+    font-family: 'Tillana', cursive;
+    text-decoration: none;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+ul li {
+    margin: 0px 30px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+}
+
+ul li a:hover {
+    border-bottom: 8px solid rgb(36, 174, 174);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  HOME SECTION  */
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    background: url("images/img5.png") no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+
+.info {
+    width: 50vw;
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-one {
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 32px;
+    text-align: left;
+    width: 55vw;
+}
+
+.text-two {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 33px;
+    text-align: left;
+    width: 55vw;
+}
+
+.text-three {
+    font-size: 27px;
+    font-weight: 600;
+    text-align: left;
+    width: 55vw;
+}
+
+.home-logo-image {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeImage {
+    width: 30vw;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 0%;
+}
+
+.btn-one {
+    margin-top: 5vh;
+    width: 55vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.download-cv {
+    font-size: 25px;
+    font-weight: bold;
+    background: #ff6a00bf;
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 11px;
+    /* box-shadow: 2px 2px 6px 2px dimgray; */
+}
+
+.download-cv:hover {
+    margin-top: -10px;
+    background: #fdb581;
+    color: #232323;
+    box-shadow: 5px 5px 0px 0px cadetblue;
+    cursor: pointer;
+}
+
+/*  ABOUT SECTION   */
+
+#about {
+    background-color: #1e8197;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-heading {
+    margin-top: 10vh;
+    text-align: center;
+    color: #fdb581;
+    border-bottom: 3px double #fdb581;
+    font-size: 5em;
+    font-weight: 600;
+    width: 40vw;
+    padding: 10px;
+    margin-bottom: 4vh;
+}
+
+.about-me-paragraph {
+    text-align: center;
+    color: #fdb581;
+    font-size: 2em;
+    font-weight: 500;
+    width: 55vw;
+    padding: 10px;
+    margin-bottom: 7vh;
+    word-spacing: 0.5m;
+}
+
+/*  SKILLS SECTION  */
+
+#skill {
+    background: url("images/img7.png") no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+#skill-heading {
+    width: 40vw;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(49, 69, 49);
+    border-bottom: 3px double rgb(49, 69, 49);
+}
+
+.skill-image-container {
+    justify-items: center;
+    margin-top: 50px;
+    padding: 100px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1px;
+    column-gap: 1px;
+    /* background-color: red; */
+}
+
+.skillImage {
+    margin: 10px 40px;
+    width: 80%;
+    border-radius: 20%;
+    border: 3px solid #333;
+    box-shadow: 1px 2px 12px 1px #9c9a9a;
+}
+
+.skillImage:hover {
+    margin: 2px 30px;
+    width: 85%;
+    border-radius: 20%;
+}
+
+/*  WORK CONTAINER  */
+#work {
+    background: linear-gradient(to top left, #fdb581, #830564);
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+#work-heading {
+    width: 40vw;
+    margin-top: 5vh;
+    font-size: 4em;
+    text-align: center;
+    color: #f2f2f2;
+    border-bottom: 3px double #f2f2f2;
+}
+
+.work-image-container {
+    justify-items: center;
+    margin-top: 5px;
+    padding: 100px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1px;
+    column-gap: 1px;
+    /* background-color: red; */
+}
+
+.work-image {
+    margin: 10px 40px;
+    width: 80%;
+    border-radius: 10%;
+    border: 3px solid #333;
+    box-shadow: 1px 2px 12px 1px #9c9a9a;
+}
+
+.work-image:hover {
+    margin: 2px 30px;
+    width: 85%;
+    border-radius: 10%;
+}
+
+/*  CONTACT SECTION   */
+
+#contact {
+    background: url("images/img2.png");
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+#contact-me {
+    width: 70vw;
+    border-radius: 2em;
+    box-shadow: 0px 13px 12px 2px grey;
+    margin-top: 30px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#contact-info-linkedin,
+#contact-info-codepen,
+#contact-info-github,
+#contact-info-phone,
+#contact-info-email {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+#linkedin {
+    width: 4vw;
+    border-radius: 13px;
+    margin: 44px;
+}
+
+#linkedin:hover {
+    width: 5vw;
+    margin: 33px;
+    cursor: pointer;
+}
+
+#codepen {
+    width: 4vw;
+    margin: 44px;
+}
+
+#codepen:hover {
+    width: 5vw;
+    margin: 33px;
+    cursor: pointer;
+}
+
+#github {
+    width: 4vw;
+    margin: 44px;
+}
+
+#github:hover {
+    width: 5vw;
+    margin: 33px;
+    cursor: pointer;
+}
+
+#phone {
+    width: 4vw;
+    margin: 44px;
+}
+
+#phone:hover {
+    width: 5vw;
+    margin: 33px;
+    cursor: pointer;
+}
+
+#email {
+    width: 3vw;
+    margin: 14px;
+}
+
+#email-text {
+    font-size: 2.5em;
+    color: rgb(68, 80, 39);
+}
+
+@media only screen and (min-width:2001px) {
+    #about {
+        padding: 0px;
+    }
+
+    .about-me-paragraph {
+        font-size: 1.5em;
+    }
+
+    .skill-image-container {
+        height: 106vh;
+        margin-top: -56px;
+    }
+
+    #work {
+        padding: 0px;
+        overflow-y: hidden;
+    }
+
+    #contact {
+        padding: 0px;
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width:1081px) and (max-width:2000px) {
+
+    .about-me-heading {
+        margin-top: 10vh;
+        text-align: center;
+        color: #fdb581;
+        border-bottom: 3px double #fdb581;
+        font-size: 3.5em;
+        font-weight: bold;
+        width: 40vw;
+        padding: 10px;
+        margin-bottom: 4vh;
+    }
+
+    .about-me-paragraph {
+        text-align: center;
+        color: #fdb581;
+        font-size: 1.5em;
+        font-weight: 600;
+        width: 55vw;
+        padding: 10px;
+        margin-bottom: 7vh;
+    }
+
+    .logo-a {
+        font-family: 'Tillana', cursive;
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width:1080px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .logo-a {
+        display: none;
+    }
+
+    ul {
+        color: #f2f2f2;
+    }
+
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        width: 50vw;
+        margin-left: 0vw;
+    }
+
+    .text-one {
+        font-size: 35px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 17px;
+        text-align: center;
+        width: 33vw;
+    }
+
+    .text-two {
+        font-size: 43px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 42vw;
+    }
+
+    .text-three {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        width: 47vw;
+    }
+
+    .homeImage {
+        width: 27vw;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 23%;
+        border-bottom-left-radius: 29%;
+        border-bottom-right-radius: 0%;
+    }
+
+    .btn-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-logo-image {
+        width: 50vw;
+        display: flex;
+        margin-top: 53px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me-heading {
+        font-size: 3em;
+    }
+
+    .about-me-paragraph {
+        font-size: 1em;
+    }
+
+    #skill-heading {
+        width: 40vw;
+        padding-bottom: 18px;
+        font-size: 2.5em;
+        text-align: center;
+        color: rgb(49, 69, 49);
+        border-bottom: 3px double rgb(49, 69, 49);
+    }
+
+    .skill-image-container {
+        margin-top: 50px;
+        padding: 20px;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1px;
+        column-gap: 1px;
+        /* background-color: red; */
+    }
+
+    .skillImage {
+        margin: 10px 40px;
+        width: 70%;
+        border-radius: 20%;
+    }
+
+    .skillImage:hover {
+        margin: 0px 35px;
+        width: 75%;
+        border-radius: 20%;
+    }
+}
