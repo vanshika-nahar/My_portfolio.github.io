@@ -442,7 +442,7 @@ main {
 
 }
 
-@media screen and (max-width:1080px) {
+@media (min-width:600px) and (max-width:1080px) {
     nav {
         display: flex;
         justify-content: center;
