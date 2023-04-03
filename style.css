@@ -451,24 +451,6 @@ main {
 }
 
 @media screen and (max-width:1081px) {
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        padding: 10px;
-        width: 100vw;
-    }
-
-    .logo-a {
-        display: none;
-    }
-
-    ul {
-        color: #f2f2f2;
-    }
-
-
     #home {
         display: flex;
         flex-direction: column;
@@ -570,23 +552,6 @@ main {
 }
 
 @media (max-width:481px) {
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        padding: 10px;
-        width: 100vw;
-    }
-
-    ul li {
-        margin: 0px 14px;
-        list-style-type: none;
-    }
-
-    ul li a {
-        font-size: 1.2em;
-    }
 
     .text-one {
         font-size: 19px;
